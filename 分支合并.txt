@@ -1,0 +1,138 @@
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git status
+On branch test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\344\270\200\344\272\233git\345\221\275\344\273\244\346\223\215\344\275\234\350\256\260\345\275\225.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ ls
+aaa.txt  helloworld.java  README.md  ssh方式克隆项目.txt  test.txt  一些git命令操作记录.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git add .
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git commit -m "新增一个文件"
+[test 766c0e5] 新增一个文件
+ 1 file changed, 1065 insertions(+)
+ create mode 100644 "\344\270\200\344\272\233git\345\221\275\344\273\244\346\223\215\344\275\234\350\256\260\345\275\225.txt"
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git push
+fatal: The current branch test has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test
+
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git push --set-upstream origin test
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 6.77 KiB | 1.13 MiB/s, done.
+Total 18 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/DrunkMoonRemex/demo/pull/new/test
+remote:
+To github.com:DrunkMoonRemex/demo.git
+ * [new branch]      test -> test
+Branch 'test' set up to track remote branch 'test' from 'origin'.
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ git meger test
+git: 'meger' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ git merge tet
+merge: tet - not something we can merge
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ git merge test
+Updating 6e54ea9..766c0e5
+Fast-forward
+ test.txt                                           |    4 +
+ ...23\215\344\275\234\350\256\260\345\275\225.txt" | 1065 ++++++++++++++++++++
+ 2 files changed, 1069 insertions(+)
+ create mode 100644 test.txt
+ create mode 100644 "\344\270\200\344\272\233git\345\221\275\344\273\244\346\223\215\344\275\234\350\256\260\345\275\225.txt"
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ ls
+aaa.txt  helloworld.java  README.md  ssh方式克隆项目.txt  test.txt  一些git命令操作记录.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ git reflog
+766c0e5 (HEAD -> master, origin/test, test) HEAD@{0}: merge test: Fast-forward
+6e54ea9 HEAD@{1}: checkout: moving from test to master
+766c0e5 (HEAD -> master, origin/test, test) HEAD@{2}: commit: 新增一个文件
+4d12b6d HEAD@{3}: checkout: moving from 4d12b6d10845c06dfdd725d9a6b6185a48d54d75 to test
+4d12b6d HEAD@{4}: reset: moving to HEAD^
+ab3fa7b HEAD@{5}: commit: 555
+4d12b6d HEAD@{6}: reset: moving to HEAD@{6}
+b581a3e HEAD@{7}: checkout: moving from test to b581a3e
+4d12b6d HEAD@{8}: reset: moving to 4d12b6d
+b581a3e HEAD@{9}: reset: moving to HEAD@{4}
+75853d0 HEAD@{10}: reset: moving to HEAD~2
+4d12b6d HEAD@{11}: reset: moving to 4d12b6d
+b581a3e HEAD@{12}: reset: moving to b581a3e
+4d12b6d HEAD@{13}: commit: 444
+b581a3e HEAD@{14}: commit: 333
+75853d0 HEAD@{15}: commit: 222
+f33f66e HEAD@{16}: commit: 111
+6e54ea9 HEAD@{17}: checkout: moving from master to test
+6e54ea9 HEAD@{18}: reset: moving to HEAD
+6e54ea9 HEAD@{19}: reset: moving to HEAD@{7}
+865e19b HEAD@{20}: reset: moving to HEAD~2
+ab4fc6c HEAD@{21}: commit: 重新提交
+6f5d421 HEAD@{22}: reset: moving to HEAD~4
+2614b88 HEAD@{23}: commit: 444
+6e54ea9 HEAD@{24}: reset: moving to HEAD@{2}
+6e54ea9 HEAD@{25}: reset: moving to HEAD
+6e54ea9 HEAD@{26}: reset: moving to HEAD
+6e54ea9 HEAD@{27}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{28}: commit: tijiao
+f73a515 HEAD@{29}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{30}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{31}: commit: 123
+98da3f3 HEAD@{32}: checkout: moving from master to branch2
+6f5d421 HEAD@{33}: commit: commit java
+865e19b HEAD@{34}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{35}: checkout: moving from branch2 to master
+98da3f3 HEAD@{36}: commit: 修改java
+0e7fd2c HEAD@{37}: checkout: moving from master to branch2
+fb3c78e HEAD@{38}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{39}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{40}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{41}: commit: delete test.txt
+eddf936 HEAD@{42}: checkout: moving from master to branch2
+eddf936 HEAD@{43}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{44}: commit: aaa.txt push
+e4a38e9 HEAD@{45}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{46}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{47}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{48}: checkout: moving from master to branch2
+eddf936 HEAD@{49}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{50}: checkout: moving from master to branch1
+eddf936 HEAD@{51}: commit: add helloworld.java
+e4a38e9 HEAD@{52}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{53}: commit: demo commit
+1201c60 HEAD@{54}: commit: 简单的提交
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$
