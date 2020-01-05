@@ -1,0 +1,1065 @@
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (master)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ ls
+aaa.txt  helloworld.java  README.md  ssh方式克隆项目.txt
+
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git branch
+  branch1
+  branch2
+  master
+* test
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ touch test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ vim test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git add .
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git commit -m "111"
+[test f33f66e] 111
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ vim test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git commit -am "222"
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+[test 75853d0] 222
+ 1 file changed, 1 insertion(+)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ vim test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git commit -am "333"
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+[test b581a3e] 333
+ 1 file changed, 1 insertion(+)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ vim test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git commit -am "444"
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+[test 4d12b6d] 444
+ 1 file changed, 1 insertion(+)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog
+4d12b6d (HEAD -> test) HEAD@{0}: commit: 444
+b581a3e HEAD@{1}: commit: 333
+75853d0 HEAD@{2}: commit: 222
+f33f66e HEAD@{3}: commit: 111
+6e54ea9 (master) HEAD@{4}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{5}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{6}: reset: moving to HEAD@{7}
+865e19b HEAD@{7}: reset: moving to HEAD~2
+ab4fc6c HEAD@{8}: commit: 重新提交
+6f5d421 HEAD@{9}: reset: moving to HEAD~4
+2614b88 HEAD@{10}: commit: 444
+6e54ea9 (master) HEAD@{11}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{12}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{13}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{14}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{15}: commit: tijiao
+f73a515 HEAD@{16}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{17}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{18}: commit: 123
+98da3f3 HEAD@{19}: checkout: moving from master to branch2
+6f5d421 HEAD@{20}: commit: commit java
+865e19b HEAD@{21}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{22}: checkout: moving from branch2 to master
+98da3f3 HEAD@{23}: commit: 修改java
+0e7fd2c HEAD@{24}: checkout: moving from master to branch2
+fb3c78e HEAD@{25}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{26}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{27}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{28}: commit: delete test.txt
+eddf936 HEAD@{29}: checkout: moving from master to branch2
+eddf936 HEAD@{30}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{31}: commit: aaa.txt push
+e4a38e9 HEAD@{32}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{33}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{34}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{35}: checkout: moving from master to branch2
+eddf936 HEAD@{36}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{37}: checkout: moving from master to branch1
+eddf936 HEAD@{38}: commit: add helloworld.java
+e4a38e9 HEAD@{39}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{40}: commit: demo commit
+1201c60 HEAD@{41}: commit: 简单的提交
+17a1edd HEAD@{42}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{43}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{44}: reset: moving to HEAD
+17a1edd HEAD@{45}: reset: moving to HEAD
+17a1edd HEAD@{46}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{47}: commit: first commit
+04adac9 HEAD@{48}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog test
+4d12b6d (HEAD -> test) test@{0}: commit: 444
+b581a3e test@{1}: commit: 333
+75853d0 test@{2}: commit: 222
+f33f66e test@{3}: commit: 111
+6e54ea9 (master) test@{4}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset -hard b581a3e
+error: did you mean `--hard` (with two dashes ?)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset --hard b581a3e
+HEAD is now at b581a3e 333
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog
+b581a3e (HEAD -> test) HEAD@{0}: reset: moving to b581a3e
+4d12b6d HEAD@{1}: commit: 444
+b581a3e (HEAD -> test) HEAD@{2}: commit: 333
+75853d0 HEAD@{3}: commit: 222
+f33f66e HEAD@{4}: commit: 111
+6e54ea9 (master) HEAD@{5}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{6}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{7}: reset: moving to HEAD@{7}
+865e19b HEAD@{8}: reset: moving to HEAD~2
+ab4fc6c HEAD@{9}: commit: 重新提交
+6f5d421 HEAD@{10}: reset: moving to HEAD~4
+2614b88 HEAD@{11}: commit: 444
+6e54ea9 (master) HEAD@{12}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{13}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{14}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{15}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{16}: commit: tijiao
+f73a515 HEAD@{17}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{18}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{19}: commit: 123
+98da3f3 HEAD@{20}: checkout: moving from master to branch2
+6f5d421 HEAD@{21}: commit: commit java
+865e19b HEAD@{22}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{23}: checkout: moving from branch2 to master
+98da3f3 HEAD@{24}: commit: 修改java
+0e7fd2c HEAD@{25}: checkout: moving from master to branch2
+fb3c78e HEAD@{26}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{27}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{28}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{29}: commit: delete test.txt
+eddf936 HEAD@{30}: checkout: moving from master to branch2
+eddf936 HEAD@{31}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{32}: commit: aaa.txt push
+e4a38e9 HEAD@{33}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{34}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{35}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{36}: checkout: moving from master to branch2
+eddf936 HEAD@{37}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{38}: checkout: moving from master to branch1
+eddf936 HEAD@{39}: commit: add helloworld.java
+e4a38e9 HEAD@{40}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{41}: commit: demo commit
+1201c60 HEAD@{42}: commit: 简单的提交
+17a1edd HEAD@{43}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{44}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{45}: reset: moving to HEAD
+17a1edd HEAD@{46}: reset: moving to HEAD
+17a1edd HEAD@{47}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{48}: commit: first commit
+04adac9 HEAD@{49}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog test
+b581a3e (HEAD -> test) test@{0}: reset: moving to b581a3e
+4d12b6d test@{1}: commit: 444
+b581a3e (HEAD -> test) test@{2}: commit: 333
+75853d0 test@{3}: commit: 222
+f33f66e test@{4}: commit: 111
+6e54ea9 (master) test@{5}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset --hard 4d12b6d
+HEAD is now at 4d12b6d 444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog
+4d12b6d (HEAD -> test) HEAD@{0}: reset: moving to 4d12b6d
+b581a3e HEAD@{1}: reset: moving to b581a3e
+4d12b6d (HEAD -> test) HEAD@{2}: commit: 444
+b581a3e HEAD@{3}: commit: 333
+75853d0 HEAD@{4}: commit: 222
+f33f66e HEAD@{5}: commit: 111
+6e54ea9 (master) HEAD@{6}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{7}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{8}: reset: moving to HEAD@{7}
+865e19b HEAD@{9}: reset: moving to HEAD~2
+ab4fc6c HEAD@{10}: commit: 重新提交
+6f5d421 HEAD@{11}: reset: moving to HEAD~4
+2614b88 HEAD@{12}: commit: 444
+6e54ea9 (master) HEAD@{13}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{14}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{15}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{16}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{17}: commit: tijiao
+f73a515 HEAD@{18}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{19}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{20}: commit: 123
+98da3f3 HEAD@{21}: checkout: moving from master to branch2
+6f5d421 HEAD@{22}: commit: commit java
+865e19b HEAD@{23}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{24}: checkout: moving from branch2 to master
+98da3f3 HEAD@{25}: commit: 修改java
+0e7fd2c HEAD@{26}: checkout: moving from master to branch2
+fb3c78e HEAD@{27}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{28}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{29}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{30}: commit: delete test.txt
+eddf936 HEAD@{31}: checkout: moving from master to branch2
+eddf936 HEAD@{32}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{33}: commit: aaa.txt push
+e4a38e9 HEAD@{34}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{35}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{36}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{37}: checkout: moving from master to branch2
+eddf936 HEAD@{38}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{39}: checkout: moving from master to branch1
+eddf936 HEAD@{40}: commit: add helloworld.java
+e4a38e9 HEAD@{41}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{42}: commit: demo commit
+1201c60 HEAD@{43}: commit: 简单的提交
+17a1edd HEAD@{44}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{45}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{46}: reset: moving to HEAD
+17a1edd HEAD@{47}: reset: moving to HEAD
+17a1edd HEAD@{48}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{49}: commit: first commit
+04adac9 HEAD@{50}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog test
+4d12b6d (HEAD -> test) test@{0}: reset: moving to 4d12b6d
+b581a3e test@{1}: reset: moving to b581a3e
+4d12b6d (HEAD -> test) test@{2}: commit: 444
+b581a3e test@{3}: commit: 333
+75853d0 test@{4}: commit: 222
+f33f66e test@{5}: commit: 111
+6e54ea9 (master) test@{6}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset --soft HEAD~2
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog
+75853d0 (HEAD -> test) HEAD@{0}: reset: moving to HEAD~2
+4d12b6d HEAD@{1}: reset: moving to 4d12b6d
+b581a3e HEAD@{2}: reset: moving to b581a3e
+4d12b6d HEAD@{3}: commit: 444
+b581a3e HEAD@{4}: commit: 333
+75853d0 (HEAD -> test) HEAD@{5}: commit: 222
+f33f66e HEAD@{6}: commit: 111
+6e54ea9 (master) HEAD@{7}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{8}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{9}: reset: moving to HEAD@{7}
+865e19b HEAD@{10}: reset: moving to HEAD~2
+ab4fc6c HEAD@{11}: commit: 重新提交
+6f5d421 HEAD@{12}: reset: moving to HEAD~4
+2614b88 HEAD@{13}: commit: 444
+6e54ea9 (master) HEAD@{14}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{15}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{16}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{17}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{18}: commit: tijiao
+f73a515 HEAD@{19}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{20}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{21}: commit: 123
+98da3f3 HEAD@{22}: checkout: moving from master to branch2
+6f5d421 HEAD@{23}: commit: commit java
+865e19b HEAD@{24}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{25}: checkout: moving from branch2 to master
+98da3f3 HEAD@{26}: commit: 修改java
+0e7fd2c HEAD@{27}: checkout: moving from master to branch2
+fb3c78e HEAD@{28}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{29}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{30}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{31}: commit: delete test.txt
+eddf936 HEAD@{32}: checkout: moving from master to branch2
+eddf936 HEAD@{33}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{34}: commit: aaa.txt push
+e4a38e9 HEAD@{35}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{36}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{37}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{38}: checkout: moving from master to branch2
+eddf936 HEAD@{39}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{40}: checkout: moving from master to branch1
+eddf936 HEAD@{41}: commit: add helloworld.java
+e4a38e9 HEAD@{42}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{43}: commit: demo commit
+1201c60 HEAD@{44}: commit: 简单的提交
+17a1edd HEAD@{45}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{46}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{47}: reset: moving to HEAD
+17a1edd HEAD@{48}: reset: moving to HEAD
+17a1edd HEAD@{49}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{50}: commit: first commit
+04adac9 HEAD@{51}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog test
+75853d0 (HEAD -> test) test@{0}: reset: moving to HEAD~2
+4d12b6d test@{1}: reset: moving to 4d12b6d
+b581a3e test@{2}: reset: moving to b581a3e
+4d12b6d test@{3}: commit: 444
+b581a3e test@{4}: commit: 333
+75853d0 (HEAD -> test) test@{5}: commit: 222
+f33f66e test@{6}: commit: 111
+6e54ea9 (master) test@{7}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git status
+On branch test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset  HEAD@{4}
+Unstaged changes after reset:
+M       test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reset --hard 4d12b6d
+HEAD is now at 4d12b6d 444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git checkout commit HEAD@{4}
+error: pathspec 'commit' did not match any file(s) known to git
+error: pathspec 'HEAD@{4}' did not match any file(s) known to git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git checkout commit b581a3e
+error: pathspec 'commit' did not match any file(s) known to git
+error: pathspec 'b581a3e' did not match any file(s) known to git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git checkout  b581a3e
+Note: switching to 'b581a3e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b581a3e 333
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ git reflog
+b581a3e (HEAD) HEAD@{0}: checkout: moving from test to b581a3e
+4d12b6d (test) HEAD@{1}: reset: moving to 4d12b6d
+b581a3e (HEAD) HEAD@{2}: reset: moving to HEAD@{4}
+75853d0 HEAD@{3}: reset: moving to HEAD~2
+4d12b6d (test) HEAD@{4}: reset: moving to 4d12b6d
+b581a3e (HEAD) HEAD@{5}: reset: moving to b581a3e
+4d12b6d (test) HEAD@{6}: commit: 444
+b581a3e (HEAD) HEAD@{7}: commit: 333
+75853d0 HEAD@{8}: commit: 222
+f33f66e HEAD@{9}: commit: 111
+6e54ea9 (master) HEAD@{10}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{11}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{12}: reset: moving to HEAD@{7}
+865e19b HEAD@{13}: reset: moving to HEAD~2
+ab4fc6c HEAD@{14}: commit: 重新提交
+6f5d421 HEAD@{15}: reset: moving to HEAD~4
+2614b88 HEAD@{16}: commit: 444
+6e54ea9 (master) HEAD@{17}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{18}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{19}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{20}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{21}: commit: tijiao
+f73a515 HEAD@{22}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{23}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{24}: commit: 123
+98da3f3 HEAD@{25}: checkout: moving from master to branch2
+6f5d421 HEAD@{26}: commit: commit java
+865e19b HEAD@{27}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{28}: checkout: moving from branch2 to master
+98da3f3 HEAD@{29}: commit: 修改java
+0e7fd2c HEAD@{30}: checkout: moving from master to branch2
+fb3c78e HEAD@{31}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{32}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{33}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{34}: commit: delete test.txt
+eddf936 HEAD@{35}: checkout: moving from master to branch2
+eddf936 HEAD@{36}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{37}: commit: aaa.txt push
+e4a38e9 HEAD@{38}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{39}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{40}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{41}: checkout: moving from master to branch2
+eddf936 HEAD@{42}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{43}: checkout: moving from master to branch1
+eddf936 HEAD@{44}: commit: add helloworld.java
+e4a38e9 HEAD@{45}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{46}: commit: demo commit
+1201c60 HEAD@{47}: commit: 简单的提交
+17a1edd HEAD@{48}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{49}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{50}: reset: moving to HEAD
+17a1edd HEAD@{51}: reset: moving to HEAD
+17a1edd HEAD@{52}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{53}: commit: first commit
+04adac9 HEAD@{54}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ git status
+HEAD detached at b581a3e
+nothing to commit, working tree clean
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ cat text.txt
+cat: text.txt: No such file or directory
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ ls
+aaa.txt  helloworld.java  README.md  ssh方式克隆项目.txt  test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ cat test.txt
+111
+222
+333
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ git reset -h
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <paths>...
+   or: EXPERIMENTAL: git reset [-q] [--stdin [-z]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+    -z                    EXPERIMENTAL: paths are separated with NUL character
+    --stdin               EXPERIMENTAL: read paths from <stdin>
+
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ git reflog
+b581a3e (HEAD) HEAD@{0}: checkout: moving from test to b581a3e
+4d12b6d (test) HEAD@{1}: reset: moving to 4d12b6d
+b581a3e (HEAD) HEAD@{2}: reset: moving to HEAD@{4}
+75853d0 HEAD@{3}: reset: moving to HEAD~2
+4d12b6d (test) HEAD@{4}: reset: moving to 4d12b6d
+b581a3e (HEAD) HEAD@{5}: reset: moving to b581a3e
+4d12b6d (test) HEAD@{6}: commit: 444
+b581a3e (HEAD) HEAD@{7}: commit: 333
+75853d0 HEAD@{8}: commit: 222
+f33f66e HEAD@{9}: commit: 111
+6e54ea9 (master) HEAD@{10}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{11}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{12}: reset: moving to HEAD@{7}
+865e19b HEAD@{13}: reset: moving to HEAD~2
+ab4fc6c HEAD@{14}: commit: 重新提交
+6f5d421 HEAD@{15}: reset: moving to HEAD~4
+2614b88 HEAD@{16}: commit: 444
+6e54ea9 (master) HEAD@{17}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{18}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{19}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{20}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{21}: commit: tijiao
+f73a515 HEAD@{22}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{23}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{24}: commit: 123
+98da3f3 HEAD@{25}: checkout: moving from master to branch2
+6f5d421 HEAD@{26}: commit: commit java
+865e19b HEAD@{27}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{28}: checkout: moving from branch2 to master
+98da3f3 HEAD@{29}: commit: 修改java
+0e7fd2c HEAD@{30}: checkout: moving from master to branch2
+fb3c78e HEAD@{31}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{32}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{33}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{34}: commit: delete test.txt
+eddf936 HEAD@{35}: checkout: moving from master to branch2
+eddf936 HEAD@{36}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{37}: commit: aaa.txt push
+e4a38e9 HEAD@{38}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{39}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{40}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{41}: checkout: moving from master to branch2
+eddf936 HEAD@{42}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{43}: checkout: moving from master to branch1
+eddf936 HEAD@{44}: commit: add helloworld.java
+e4a38e9 HEAD@{45}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{46}: commit: demo commit
+1201c60 HEAD@{47}: commit: 简单的提交
+17a1edd HEAD@{48}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{49}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{50}: reset: moving to HEAD
+17a1edd HEAD@{51}: reset: moving to HEAD
+17a1edd HEAD@{52}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{53}: commit: first commit
+04adac9 HEAD@{54}: clone: from git@github.com:DrunkMoonRemex/demo.git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((b581a3e...))
+$ git reset --hard HEAD@{6}
+HEAD is now at 4d12b6d 444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git reflog
+4d12b6d (HEAD, test) HEAD@{0}: reset: moving to HEAD@{6}
+b581a3e HEAD@{1}: checkout: moving from test to b581a3e
+4d12b6d (HEAD, test) HEAD@{2}: reset: moving to 4d12b6d
+b581a3e HEAD@{3}: reset: moving to HEAD@{4}
+75853d0 HEAD@{4}: reset: moving to HEAD~2
+4d12b6d (HEAD, test) HEAD@{5}: reset: moving to 4d12b6d
+b581a3e HEAD@{6}: reset: moving to b581a3e
+4d12b6d (HEAD, test) HEAD@{7}: commit: 444
+b581a3e HEAD@{8}: commit: 333
+75853d0 HEAD@{9}: commit: 222
+f33f66e HEAD@{10}: commit: 111
+6e54ea9 (master) HEAD@{11}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{12}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{13}: reset: moving to HEAD@{7}
+865e19b HEAD@{14}: reset: moving to HEAD~2
+ab4fc6c HEAD@{15}: commit: 重新提交
+6f5d421 HEAD@{16}: reset: moving to HEAD~4
+2614b88 HEAD@{17}: commit: 444
+6e54ea9 (master) HEAD@{18}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{19}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{20}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{21}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{22}: commit: tijiao
+f73a515 HEAD@{23}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{24}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{25}: commit: 123
+98da3f3 HEAD@{26}: checkout: moving from master to branch2
+6f5d421 HEAD@{27}: commit: commit java
+865e19b HEAD@{28}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{29}: checkout: moving from branch2 to master
+98da3f3 HEAD@{30}: commit: 修改java
+0e7fd2c HEAD@{31}: checkout: moving from master to branch2
+fb3c78e HEAD@{32}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{33}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{34}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{35}: commit: delete test.txt
+eddf936 HEAD@{36}: checkout: moving from master to branch2
+eddf936 HEAD@{37}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{38}: commit: aaa.txt push
+e4a38e9 HEAD@{39}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{40}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{41}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{42}: checkout: moving from master to branch2
+eddf936 HEAD@{43}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{44}: checkout: moving from master to branch1
+eddf936 HEAD@{45}: commit: add helloworld.java
+e4a38e9 HEAD@{46}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{47}: commit: demo commit
+1201c60 HEAD@{48}: commit: 简单的提交
+17a1edd HEAD@{49}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{50}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{51}: reset: moving to HEAD
+17a1edd HEAD@{52}: reset: moving to HEAD
+17a1edd HEAD@{53}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{54}: commit: first commit
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git reflog test
+4d12b6d (HEAD, test) test@{0}: reset: moving to 4d12b6d
+b581a3e test@{1}: reset: moving to HEAD@{4}
+75853d0 test@{2}: reset: moving to HEAD~2
+4d12b6d (HEAD, test) test@{3}: reset: moving to 4d12b6d
+b581a3e test@{4}: reset: moving to b581a3e
+4d12b6d (HEAD, test) test@{5}: commit: 444
+b581a3e test@{6}: commit: 333
+75853d0 test@{7}: commit: 222
+f33f66e test@{8}: commit: 111
+6e54ea9 (master) test@{9}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git status
+HEAD detached from b581a3e
+nothing to commit, working tree clean
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ vim test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git commit -am "555"
+
+[detached HEAD ab3fa7b] 555
+ 1 file changed, 1 insertion(+)
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reflog test
+4d12b6d (test) test@{0}: reset: moving to 4d12b6d
+b581a3e test@{1}: reset: moving to HEAD@{4}
+75853d0 test@{2}: reset: moving to HEAD~2
+4d12b6d (test) test@{3}: reset: moving to 4d12b6d
+b581a3e test@{4}: reset: moving to b581a3e
+4d12b6d (test) test@{5}: commit: 444
+b581a3e test@{6}: commit: 333
+75853d0 test@{7}: commit: 222
+f33f66e test@{8}: commit: 111
+6e54ea9 (master) test@{9}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git log
+commit ab3fa7b5bcf9ff975439bac3b6604413f26c39d3 (HEAD)
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 14:01:04 2020 +0800
+
+    555
+
+commit 4d12b6d10845c06dfdd725d9a6b6185a48d54d75 (test)
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 13:33:29 2020 +0800
+
+    444
+
+commit b581a3e031c37348af1869e10ad6aa710f762ad6
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 13:33:13 2020 +0800
+
+    333
+
+commit 75853d0da1bfc6bc95ca11e324c5571f9ab4a5e7
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 13:32:38 2020 +0800
+
+    222
+
+commit f33f66e60800f4ef1bfbe85640faff7bcd8c4dc8
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 13:32:04 2020 +0800
+
+    111
+
+commit 6e54ea9df0ca06402f17cd53bbbad62329e3c6ec (master)
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sun Jan 5 11:45:26 2020 +0800
+
+    111
+
+commit faf3aa0095e4ac96e329a3e8894a322bc0d1f759 (origin/master, origin/HEAD)
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sat Jan 4 23:55:18 2020 +0800
+
+    tijiao
+
+commit f73a5157e4d08761d51a15a8614b87fa97e8ebcf
+Merge: 6f5d421 0f6706f
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sat Jan 4 23:51:57 2020 +0800
+
+    helloworld 又加了点东西
+
+commit 0f6706f6244e7b8b5e9435ca1e074c7d0d381b53 (origin/branch2, branch2)
+Author: drunk_moon_remax <898843662@qq.com>
+Date:   Sat Jan 4 23:44:23 2020 +0800
+
+    123
+
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git log --reverse --online
+\fatal: unrecognized argument: --online
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git log -reverse --online
+fatal: unrecognized argument: -reverse
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git log -reverse --oneline
+fatal: unrecognized argument: -reverse
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git log --reverse --oneline
+04adac9 Initial commit
+17a1edd first commit
+1201c60 简单的提交 with '#' will be ignored, and an empty message aborts the commit.
+9e1584d test other commit
+ff2eeda demo commit
+e4a38e9 jiejuechongtu
+eddf936 add helloworld.java
+439b9aa (origin/branch1, branch1) aaa.txt push
+0e7fd2c delete test.txt
+fb3c78e  Merge branch 'branch1'
+98da3f3 修改java
+865e19b Merge branch 'branch2'
+6f5d421 commit java
+0f6706f (origin/branch2, branch2) 123
+f73a515 helloworld 又加了点东西
+faf3aa0 (origin/master, origin/HEAD) tijiao
+6e54ea9 (master) 111
+f33f66e 111
+75853d0 222
+b581a3e 333
+4d12b6d (test) 444
+ab3fa7b (HEAD) 555
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reflog test
+4d12b6d (test) test@{0}: reset: moving to 4d12b6d
+b581a3e test@{1}: reset: moving to HEAD@{4}
+75853d0 test@{2}: reset: moving to HEAD~2
+4d12b6d (test) test@{3}: reset: moving to 4d12b6d
+b581a3e test@{4}: reset: moving to b581a3e
+4d12b6d (test) test@{5}: commit: 444
+b581a3e test@{6}: commit: 333
+75853d0 test@{7}: commit: 222
+f33f66e test@{8}: commit: 111
+6e54ea9 (master) test@{9}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reset
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reflog test
+4d12b6d (test) test@{0}: reset: moving to 4d12b6d
+b581a3e test@{1}: reset: moving to HEAD@{4}
+75853d0 test@{2}: reset: moving to HEAD~2
+4d12b6d (test) test@{3}: reset: moving to 4d12b6d
+b581a3e test@{4}: reset: moving to b581a3e
+4d12b6d (test) test@{5}: commit: 444
+b581a3e test@{6}: commit: 333
+75853d0 test@{7}: commit: 222
+f33f66e test@{8}: commit: 111
+6e54ea9 (master) test@{9}: branch: Created from HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reflog
+ab3fa7b (HEAD) HEAD@{0}: commit: 555
+4d12b6d (test) HEAD@{1}: reset: moving to HEAD@{6}
+b581a3e HEAD@{2}: checkout: moving from test to b581a3e
+4d12b6d (test) HEAD@{3}: reset: moving to 4d12b6d
+b581a3e HEAD@{4}: reset: moving to HEAD@{4}
+75853d0 HEAD@{5}: reset: moving to HEAD~2
+4d12b6d (test) HEAD@{6}: reset: moving to 4d12b6d
+b581a3e HEAD@{7}: reset: moving to b581a3e
+4d12b6d (test) HEAD@{8}: commit: 444
+b581a3e HEAD@{9}: commit: 333
+75853d0 HEAD@{10}: commit: 222
+f33f66e HEAD@{11}: commit: 111
+6e54ea9 (master) HEAD@{12}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{13}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{14}: reset: moving to HEAD@{7}
+865e19b HEAD@{15}: reset: moving to HEAD~2
+ab4fc6c HEAD@{16}: commit: 重新提交
+6f5d421 HEAD@{17}: reset: moving to HEAD~4
+2614b88 HEAD@{18}: commit: 444
+6e54ea9 (master) HEAD@{19}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{20}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{21}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{22}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{23}: commit: tijiao
+f73a515 HEAD@{24}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{25}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{26}: commit: 123
+98da3f3 HEAD@{27}: checkout: moving from master to branch2
+6f5d421 HEAD@{28}: commit: commit java
+865e19b HEAD@{29}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{30}: checkout: moving from branch2 to master
+98da3f3 HEAD@{31}: commit: 修改java
+0e7fd2c HEAD@{32}: checkout: moving from master to branch2
+fb3c78e HEAD@{33}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{34}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{35}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{36}: commit: delete test.txt
+eddf936 HEAD@{37}: checkout: moving from master to branch2
+eddf936 HEAD@{38}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{39}: commit: aaa.txt push
+e4a38e9 HEAD@{40}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{41}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{42}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{43}: checkout: moving from master to branch2
+eddf936 HEAD@{44}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{45}: checkout: moving from master to branch1
+eddf936 HEAD@{46}: commit: add helloworld.java
+e4a38e9 HEAD@{47}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{48}: commit: demo commit
+1201c60 HEAD@{49}: commit: 简单的提交
+17a1edd HEAD@{50}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{51}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{52}: reset: moving to HEAD
+17a1edd HEAD@{53}: reset: moving to HEAD
+17a1edd HEAD@{54}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git status
+HEAD detached from b581a3e
+nothing to commit, working tree clean
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ cat test.txt
+111
+222
+333
+444
+555
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((ab3fa7b...))
+$ git reset HEAD^
+Unstaged changes after reset:
+M       test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git status
+HEAD detached from b581a3e
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git reflog
+4d12b6d (HEAD, test) HEAD@{0}: reset: moving to HEAD^
+ab3fa7b HEAD@{1}: commit: 555
+4d12b6d (HEAD, test) HEAD@{2}: reset: moving to HEAD@{6}
+b581a3e HEAD@{3}: checkout: moving from test to b581a3e
+4d12b6d (HEAD, test) HEAD@{4}: reset: moving to 4d12b6d
+b581a3e HEAD@{5}: reset: moving to HEAD@{4}
+75853d0 HEAD@{6}: reset: moving to HEAD~2
+4d12b6d (HEAD, test) HEAD@{7}: reset: moving to 4d12b6d
+b581a3e HEAD@{8}: reset: moving to b581a3e
+4d12b6d (HEAD, test) HEAD@{9}: commit: 444
+b581a3e HEAD@{10}: commit: 333
+75853d0 HEAD@{11}: commit: 222
+f33f66e HEAD@{12}: commit: 111
+6e54ea9 (master) HEAD@{13}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{14}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{15}: reset: moving to HEAD@{7}
+865e19b HEAD@{16}: reset: moving to HEAD~2
+ab4fc6c HEAD@{17}: commit: 重新提交
+6f5d421 HEAD@{18}: reset: moving to HEAD~4
+2614b88 HEAD@{19}: commit: 444
+6e54ea9 (master) HEAD@{20}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{21}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{22}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{23}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{24}: commit: tijiao
+f73a515 HEAD@{25}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{26}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{27}: commit: 123
+98da3f3 HEAD@{28}: checkout: moving from master to branch2
+6f5d421 HEAD@{29}: commit: commit java
+865e19b HEAD@{30}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{31}: checkout: moving from branch2 to master
+98da3f3 HEAD@{32}: commit: 修改java
+0e7fd2c HEAD@{33}: checkout: moving from master to branch2
+fb3c78e HEAD@{34}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{35}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{36}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{37}: commit: delete test.txt
+eddf936 HEAD@{38}: checkout: moving from master to branch2
+eddf936 HEAD@{39}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{40}: commit: aaa.txt push
+e4a38e9 HEAD@{41}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{42}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{43}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{44}: checkout: moving from master to branch2
+eddf936 HEAD@{45}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{46}: checkout: moving from master to branch1
+eddf936 HEAD@{47}: commit: add helloworld.java
+e4a38e9 HEAD@{48}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{49}: commit: demo commit
+1201c60 HEAD@{50}: commit: 简单的提交
+17a1edd HEAD@{51}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{52}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{53}: reset: moving to HEAD
+17a1edd HEAD@{54}: reset: moving to HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git checkout branch test
+error: pathspec 'branch' did not match any file(s) known to git
+error: pathspec 'test' did not match any file(s) known to git
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo ((4d12b6d...))
+$ git checkout test
+Switched to branch 'test'
+M       test.txt
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+555
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git checkout test.txt
+Updated 1 path from the index
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ git reflog
+4d12b6d (HEAD -> test) HEAD@{0}: checkout: moving from 4d12b6d10845c06dfdd725d9a6b6185a48d54d75 to test
+4d12b6d (HEAD -> test) HEAD@{1}: reset: moving to HEAD^
+ab3fa7b HEAD@{2}: commit: 555
+4d12b6d (HEAD -> test) HEAD@{3}: reset: moving to HEAD@{6}
+b581a3e HEAD@{4}: checkout: moving from test to b581a3e
+4d12b6d (HEAD -> test) HEAD@{5}: reset: moving to 4d12b6d
+b581a3e HEAD@{6}: reset: moving to HEAD@{4}
+75853d0 HEAD@{7}: reset: moving to HEAD~2
+4d12b6d (HEAD -> test) HEAD@{8}: reset: moving to 4d12b6d
+b581a3e HEAD@{9}: reset: moving to b581a3e
+4d12b6d (HEAD -> test) HEAD@{10}: commit: 444
+b581a3e HEAD@{11}: commit: 333
+75853d0 HEAD@{12}: commit: 222
+f33f66e HEAD@{13}: commit: 111
+6e54ea9 (master) HEAD@{14}: checkout: moving from master to test
+6e54ea9 (master) HEAD@{15}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{16}: reset: moving to HEAD@{7}
+865e19b HEAD@{17}: reset: moving to HEAD~2
+ab4fc6c HEAD@{18}: commit: 重新提交
+6f5d421 HEAD@{19}: reset: moving to HEAD~4
+2614b88 HEAD@{20}: commit: 444
+6e54ea9 (master) HEAD@{21}: reset: moving to HEAD@{2}
+6e54ea9 (master) HEAD@{22}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{23}: reset: moving to HEAD
+6e54ea9 (master) HEAD@{24}: commit: 111
+faf3aa0 (origin/master, origin/HEAD) HEAD@{25}: commit: tijiao
+f73a515 HEAD@{26}: commit (merge): helloworld 又加了点东西
+6f5d421 HEAD@{27}: checkout: moving from branch2 to master
+0f6706f (origin/branch2, branch2) HEAD@{28}: commit: 123
+98da3f3 HEAD@{29}: checkout: moving from master to branch2
+6f5d421 HEAD@{30}: commit: commit java
+865e19b HEAD@{31}: merge branch2: Merge made by the 'recursive' strategy.
+fb3c78e HEAD@{32}: checkout: moving from branch2 to master
+98da3f3 HEAD@{33}: commit: 修改java
+0e7fd2c HEAD@{34}: checkout: moving from master to branch2
+fb3c78e HEAD@{35}: merge branch1: Merge made by the 'recursive' strategy.
+eddf936 HEAD@{36}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{37}: checkout: moving from branch2 to branch1
+0e7fd2c HEAD@{38}: commit: delete test.txt
+eddf936 HEAD@{39}: checkout: moving from master to branch2
+eddf936 HEAD@{40}: checkout: moving from branch1 to master
+439b9aa (origin/branch1, branch1) HEAD@{41}: commit: aaa.txt push
+e4a38e9 HEAD@{42}: checkout: moving from branch3 to branch1
+e4a38e9 HEAD@{43}: checkout: moving from branch1 to branch3
+e4a38e9 HEAD@{44}: checkout: moving from branch2 to branch1
+eddf936 HEAD@{45}: checkout: moving from master to branch2
+eddf936 HEAD@{46}: checkout: moving from branch1 to master
+e4a38e9 HEAD@{47}: checkout: moving from master to branch1
+eddf936 HEAD@{48}: commit: add helloworld.java
+e4a38e9 HEAD@{49}: commit (merge): jiejuechongtu
+ff2eeda HEAD@{50}: commit: demo commit
+1201c60 HEAD@{51}: commit: 简单的提交
+17a1edd HEAD@{52}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{53}: reset: moving to 17a1edd6c3bf2417ca0cc534708f692456ae5bb8
+17a1edd HEAD@{54}: reset: moving to HEAD
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$ cat test.txt
+111
+222
+333
+444
+
+89884@LAPTOP-DPFKR6OA MINGW64 /d/github_download/demo (test)
+$
